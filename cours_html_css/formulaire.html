@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">  <!-- balise html ouvrante et fermante, avec l'attribut lang -->
+    <head> <!--En-tête du document-->
+        <title>Ma page formulaire</title>    <!--Titre de l'onglet-->
+        <link rel="stylesheet" href="css/style.css"> <!--Balise link pour liée des langages entre eux-->
+        <link href="https://fonts.googleapis.com/css?family=Lemonada|Oswald|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Mes formulaires en HTML/CSS">  <!-- Les moteurs de recherches s'en servent pour les recherches  -->
+        <meta charset="utf-8">
+    </head>
+
+    <body> <!--Corps du ducument-->
+
+        <header>
+            <!-- Zone du haut, ex : bannière, logo, slogan..ect -->
+            <div id="logo">
+
+                <a href="#logo">
+                <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <a href="#button"></a>
+            </div>
+            <div id="slogan">
+                <marquee behavior="scroll" direction="right"><h1>Mon premier site en HTML / CSS</h1></marquee>
+
+            </div>
+            <div id="reseauSociaux">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+
+            </div>
+            <div class="clear"></div>
+        </header>
+
+        <nav>
+            <!-- Zone du menu, les liens pour naviguer sur le site -->
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Texte</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="image.html">Image</a>
+            <a href="position.html">Position</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="listes.html">Liste</a>
+            <a href="liens.html">Liens & menu</a>
+            <a href="formulaire.html" class="couleur">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+        </nav>
+
+        <main>
+            <h2>Formulaire</h2>
+            
+            <form method="post" action="url de destination" enctype="multipart/form-data">
+
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" id="pseudo" name="pseudo" required placeholder="Votre pseudo"><br>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="votre prénom"><br>
+
+                <label for="mdp">Mot de passe</label>
+                <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe"><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="name" placeholder="votre email"><br>
+
+                <label for="cv"></label>
+                <input type="file" id="cv" name="cv"><br>
+                <p>Quels sont vos fruits préférés?</p>
+
+                <label for="orange">Orange</label>
+                <input type="checkbox" id="orange" value="orange" checked>
+
+                <label for="fraise">Fraise</label>
+                <input type="checkbox" id="fraise" value="fraise">
+
+                <label for="poire">Poire</label>
+                <input type="checkbox" id="poire" value="poire"><br>
+
+                <label for="cp">Code postal</label>
+                <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9] {5}" title="5 chiffres entre 0 et 9" placeholder="Votre code postal"><br>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" cols="25"></textarea><br>
+
+                <input type="submit" name="envoyer" value="Envoyer">
+                <input type="reset" name="annuler" value="Annuler">
+
+            </form>
+        </main>
+
+        <footer>
+            <!-- Zone du bas, ex: liens administratifs, mentions légales, plan du site, CGU, CGV, contact, copyright -->
+        </footer>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
